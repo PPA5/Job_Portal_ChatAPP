@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-04 16:22+0630\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\JobPortal\settings.py:133
+msgid "English"
+msgstr "အင်္ဂလိပ်"
+
+#: .\JobPortal\settings.py:134
+msgid "Myanmar"
+msgstr "မြန်မာ"
+
+#: .\JobPortal\settings.py:135
+msgid "Japan"
+msgstr "ဂျပန်"
+
+#: .\jobs\templates\base.html:15 .\jobs\templates\com_nav.html:42
+#: .\jobs\templates\user_nav.html:43
+msgid "Home"
+msgstr "ပင်မစာမျက်နှာ"
+
+#: .\jobs\templates\base.html:20
+msgid "User Login"
+msgstr "အလုပ်လျှောက်သူဝင်ရန်"
+
+#: .\jobs\templates\base.html:24
+msgid "Admin Login"
+msgstr "အက်မင်ဝင်ရန်"
+
+#: .\jobs\templates\base.html:28
+msgid "Company Login"
+msgstr "ကုမ္ပဏီဝင်ရန်"
+
+#: .\jobs\templates\com_nav.html:46
+msgid "Add Job"
+msgstr "အလုပ်သစ်ထည့်ရန်"
+
+#: .\jobs\templates\com_nav.html:50
+#, fuzzy
+#| msgid "Job Lists"
+msgctxt "com_job_lists"
+msgid "Job Lists"
+msgstr "အလုပ်‌များ"
+
+#: .\jobs\templates\com_nav.html:54
+msgid "All Applicants"
+msgstr "လျှောက်ထားသူများ"
+
+#: .\jobs\templates\com_nav.html:57 .\jobs\templates\user_nav.html:54
+msgid "Logout"
+msgstr "ထွက်ရန်"
+
+#: .\jobs\templates\index.html:17
+msgid "Contact Us"
+msgstr "ဆက်သွယ်ရန်"
+
+#: .\jobs\templates\index.html:18
+msgid "Email"
+msgstr "အီးမေးလ်"
+
+#: .\jobs\templates\index.html:19
+msgid "Phone"
+msgstr "ဖုန်း"
+
+#: .\jobs\templates\user_nav.html:47
+#, fuzzy
+#| msgid "Job Lists"
+msgctxt "user_job_lists"
+msgid "Job Lists"
+msgstr "အလုပ်‌ခေါ်စာများ"
+
+#: .\jobs\templates\user_nav.html:51
+msgid "Message"
+msgstr "စာပို့ရန်"
+
+#: .\jobs\templates\user_nav.html:58
+msgid "Welcome"
+msgstr "ကြိုဆိုပါတယ်"

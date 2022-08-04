@@ -1,3 +1,4 @@
+{% load i18n %}
 <!doctype html>
 <html lang="en">
 
@@ -33,28 +34,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Pyae Phyo Aung</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link {% block home %} {% endblock %}" href="{% url 'user_homepage' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% block job_lists %} {% endblock %}" href="{% url 'all_jobs' %}">Job Lists</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link {% block message %} {% endblock %}" href="{% url 'chat-index' %}">Message</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                </li>
-            </ul>
-            <a class="navbar-brand" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;"
-            href="#">Welcome {{request.user.get_full_name}}</a>
-        </div>
-    </nav>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Pyae Phyo Aung</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link {% block home %} {% endblock %}" href="{% url 'user_homepage' %}">
+            {% translate "Home" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block job_lists %} {% endblock %}" href="{% url 'all_jobs' %}">
+            {% translate "Job Lists" context "user_job_lists" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block message %} {% endblock %}" href="{% url 'chat-index' %}">
+            {% translate "Message" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">{% translate "Logout" %}</a>
+        </li>
+      </ul>
+      <a class="navbar-brand" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;" href="#">
+        {% translate "Welcome" %} {{request.user.get_full_name}}</a>
+    </div>
+  </nav>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
